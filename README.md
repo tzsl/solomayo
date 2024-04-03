@@ -1,0 +1,2 @@
+# solomayo
+subtheme of Solo
