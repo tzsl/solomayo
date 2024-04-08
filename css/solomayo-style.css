@@ -1,0 +1,270 @@
+@import "colors/mayo-paleblue.css";
+/*import mayo-color. This MUST be the first rule*/
+
+/* Add your css code here */
+/*
+Variable Definitions: 
+  --r-bg: Controls the background color.
+  --r-tx: Determines the color of the text.
+  --r-h1: Sets the color for h1, h2, and h3 headings.
+  --r-lk: Changes the link text color.
+  --r-lk-h: Alters the hover color of link text.
+  --r-br: Specifies the border color.
+  --r-bg-fr: Defines the background color of input forms.
+  --r-tx-lk: Adjusts the menu link text color.
+  --r-tx-lk-h: Modifies the hover color of menu link text.
+  --r-bg-lk: Sets the menu link background color.
+  --r-bg-lk-h: Changes the hover background color of menu links.
+  --r-tx-bt: Determines the button text color.
+  --r-tx-bt-h: Alters the button text color on hover.
+  --r-bg-bt: Specifies the button background color.
+  --r-bg-bt-h: Sets the button background color on hover.
+*/
+
+/*
+Regions Names, each region has an ID and a Class with the same name.
+You can use .page-wrapper or #page-wrapper
+#page-wrapper {}
+#primary-sidebar-menu {}
+#fixed-search-block {}
+#popup-login-block {}
+#header {}
+#primary-menu {}
+#welcome-text {}
+
+#top-container {}
+#top-box-first {}
+#top-box-second {}
+#top-box-third {}
+
+#system-messages {}
+#breadcrumb {}
+#page-title {}
+
+#main-container {}
+#sidebar-box-first {}
+#sidebar-box-main {}
+#sidebar-box-second {}
+
+#bottom-container {}
+#bottom-box-first {}
+#bottom-box-second {}
+#bottom-box-third {}
+#bottom-box-fourth {}
+
+#footer-container {}
+#footer-box-first {}
+#footer-box-second {}
+#footer-box-third {}
+
+#footer-menu {}
+#copyright {}
+
+Examples:
+#page-wrapper {
+  --r-bg: #fefffc;
+  --r-tx: #4c5866;
+  --r-h1: #2a3439;
+  --r-lk: #8a3324;
+  --r-lk-h: #79443b;
+  --r-br: #f4f5f0;
+  --r-bg-fr: #f8f4ff;
+  --r-tx-lk: #2c3e4c;
+  --r-tx-lk-h: #1520a6;
+  --r-bg-lk:#F2F7FD;
+  --r-bg-lk-h: #f8f8e8;
+  --r-tx-bt: #354a21;
+  --r-tx-bt-h: #597d35;
+  --r-bg-bt: #edf1fe;
+  --r-bg-bt-h: #efece1;
+  }
+*/
+
+/* starting settings for mayo lookalike*/
+
+
+/* font Georgia*/
+body {
+  font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', Baskerville, serif;
+  line-height: 1.5em;
+  font-size: 87.5%;
+  background-color: var(--m-base);
+}
+h1, h2, h3 {
+    font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', Baskerville, serif;
+}
+
+/* put a margin to the page, colors and colors to tables */
+#page-wrapper {
+  margin: 2%;
+  width: 96%;
+  border-style: solid;
+  border-width: 0.7em;
+  --r-br: var(--m-bg);
+  --r-bg: var(--m-bg);
+  --r-tx: var(--m-text);
+  --r-lk: var(--m-link);
+  --r-lk-h: var(--m-highlight);
+  --solo-thead: var(--m-tableheader);
+  --solo-even: var(--m-even);
+  --solo-odd: lighten(var(--m-even), 40%);
+}
+
+/* main container padding less to move right under header*/
+.main-container-inner {
+    padding: 16px 0 !important;
+}
+/*less padding*/
+.solo-outer .region-inner {
+  padding: 0.5rem;
+}
+
+/*add color gradient to the header*/
+.header {
+  background: linear-gradient(to right, var(--m-left), var(--m-right)) !important;
+  --r-tx: var(--m-titleslogan);
+}
+
+/* primary menu like tabs with rounded boarders on top*/
+#primary-menu {
+    --r-bg: var(--m-bg);
+  @media (min-width: 48rem) {
+  .solo-inner .navigation__menubar li.nav__menu-item > a {
+    background-color: var(--m-node);
+    border-width: 1px 1px 0.4px 1px !important;
+    border-style: solid !important;
+    border-color: black !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 5px 2px 0 2px !important;
+    }
+  }
+}
+
+#sidebar-box-first,
+#sidebar-box-second {
+    --r-bg: var(--m-sidebar);
+    --r-tx: var(--m-sidebartext);
+    --r-tx-lk: var(--m-sidebarlink);
+}
+#sidebar-box-main {
+    --r-bg: var(--m-node);
+}
+
+.sidebar-box-first-inner,
+.sidebar-box-second-inner {
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 2px;
+    height: auto !important;
+}
+
+/* underline h2text in sidebars */
+.sidebar-box-first h2,
+.sidebar-box-second h2 {
+  background: transparent;
+  line-height: 1em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin: 4px 0px 2px 0px;
+  padding: 2px 0px;
+  font-size: 1.25em;
+}
+
+/* underline node h3 */
+.node__header h3 {
+    padding: 0px;
+    background: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 1.45em;
+}
+
+h1.page-title {
+  line-height: 1.1rem;
+  background-color: var(--m-pagetitle);
+  color: var(--m-pagetitletext);
+  padding: 4px 8px;
+  font-size: 1.3em !important;
+  margin-bottom: 10px;
+}
+
+
+h2 {
+  font-size: var(--solo-px18);
+  line-height: var(--solo-px20);
+}
+/*Otherwise icon is full width*/
+.language-icon {
+  width: 16px !important;
+}
+article.node {
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--m-node);
+}
+
+/* if extra menu's are in bottom to make it vertical*/
+.navigation__menubar-gebruikersmenu,
+.navigation__menubar-menu-redactie,
+.navigation__menubar-menu-kooradministratie {
+  width: 100%;
+  display: block !important;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  line-height: var(--solo-px3);
+  font-size: var(--solo-px15);
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+
+/* button form*/
+.page-wrapper input.button {
+    margin: 2px;
+    padding: 2px 10px;
+    color: #555555;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: solid 1px #888888;
+    background: #fff url(../images/button.gif) repeat-x center;
+}
+table, th, tr {
+    border-color: var(--m-tableheader) !important;
+}
+/*    
+.block-views {
+    background-color: var(--m-node);
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--m-nodedivider);
+}
+*/
+.evblok,
+.lnblok {
+    background-color: var(--m-node);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: var(--m-sidebarborders);
+}
+/*add colors to footer-region*/
+#copyright,
+#footer-container {
+    --r-bg: var(--m-footer);
+    --r-tx: var(--m-footertext);
+    --r-lk: var(--m-footerlink);
+}
+

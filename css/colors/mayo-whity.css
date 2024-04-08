@@ -1,0 +1,29 @@
+:root {
+    --m-base: #ffffff;
+    --m-bg: #ffffff;
+    --m-left: #ffffff;
+    --m-right: #ffffff;
+    --m-headerborders: #ffffff;
+    --m-text: #3b3b3b;
+    --m-link: #b52e1c;
+    --m-highlight: #dddddd;
+    --m-pagetitle: #666666;
+    --m-pagetitletext: #f0f0f0;
+    --m-menudivider: #aaaaaa;
+    --m-node: #ffffff;
+    --m-nodeborders: #ffffff;
+    --m-nodedivider: #cccccc;
+    --m-stickynode: #f8f8f8;
+    --m-tableheader: #d2d2d2;
+    --m-even: #e8e8e8;
+    --m-sidebar: #ffffff;
+    --m-sidebarborders: #ffffff;
+    --m-sidebardivider: #cccccc;
+    --m-sidebartext: #444444;
+    --m-sidebarlink: #a66c3a;
+    --m-footer: #dddddd;
+    --m-footertext: #333333;
+    --m-footerlink: #b5703b;
+    --m-titleslogan: #555555;
+}
+ 

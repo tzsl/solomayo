@@ -1,0 +1,28 @@
+:root {
+    --m-base: #b5b5b5;
+    --m-bg: #f0f0f0;
+    --m-left: #f0f0f0;
+    --m-right: #f0f0f0;
+    --m-headerborders: #f0f0f0;
+    --m-text: #4a4a4a;
+    --m-link: #8d56cd;
+    --m-highlight: #bfbfbf;
+    --m-pagetitle: #909090;
+    --m-pagetitletext: #f1f1f1;
+    --m-menudivider: #bfbfbf;
+    --m-node: #ffffff;
+    --m-nodeborders: #ffffff;
+    --m-nodedivider: #bcbcbc;
+    --m-stickynode: #ffffff;
+    --m-tableheader: #c9c9c9;
+    --m-even: #f0f0f0;
+    --m-sidebar: #ffffff;
+    --m-sidebarborders: #ffffff;
+    --m-sidebardivider: #a8a8a8;
+    --m-sidebartext: #5a5a5a;
+    --m-sidebarlink: #bc49ba;
+    --m-footer: #4a4a4a;
+    --m-footertext: #e6e6e6;
+    --m-footerlink: #eb94ea;
+    --m-titleslogan: #797979;
+}

@@ -1,0 +1,8 @@
+solomayo-global:
+  version: VERSION
+  css:
+    theme:
+      css/solomayo-style.css: {}
+
+  js:
+    js/solomayo-script.js: {}
