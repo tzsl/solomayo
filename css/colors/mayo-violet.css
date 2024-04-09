@@ -1,0 +1,28 @@
+:root {
+    base: #9975c2;
+    bg: #ffffff;
+    left: #763dfa;
+    right: #d986fd;
+    headerborders: #ffffff;
+    text: #3c3843;
+    link: #aa3eda;
+    highlight: #ded2f3;
+    pagetitle: #956de9;
+    pagetitletext: #f1f1f1;
+    menudivider: #d4c3ef;
+    node: #ffffff;
+    nodeborders: #d9cde9;
+    nodedivider: #d4c3e9;
+    stickynode: #f2ecf8;
+    tableheader: #d4c8f3;
+    even: #f0e8ff;
+    sidebar: #f2ecf8;
+    sidebarborders: #ffffff;
+    sidebardivider: #e0d1f5;
+    sidebartext: #8c73a5;
+    sidebarlink: #6a29ef;
+    footer: #271e3e;
+    footertext: #ddd5ec;
+    footerlink: #a972fd;
+    titleslogan: #ffffff;
+}

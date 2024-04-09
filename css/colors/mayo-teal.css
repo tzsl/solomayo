@@ -1,0 +1,29 @@
+:root {
+    base: #84a99f;
+    bg: #ffffff;
+    left: #3cafa3;
+    right: #a4fff1;
+    headerborders: #ffffff;
+    text: #3b3b3b;
+    link: #268c6c;
+    highlight: #d2f3e7;
+    pagetitle: #5f9b8f;
+    pagetitletext: #f1f1f1;
+    menudivider: #d2e4e2;
+    node: #ffffff;
+    nodeborders: #e6e6e6;
+    nodedivider: #b7bebc;
+    stickynode: #daf6f8;
+    tableheader: #bad4d1;
+    even: #e6fcf2;
+    sidebar: #d5f6e6;
+    sidebarborders: #ffffff;
+    sidebardivider: #adcdc1;
+    sidebartext: #5b5b5b;
+    sidebarlink: #0585a8;
+    footer: #3d5c54;
+    footertext: #e6e6e6;
+    footerlink: #5dead0;
+    titleslogan: #ffffff;
+}
+   
