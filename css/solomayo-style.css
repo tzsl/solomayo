@@ -181,7 +181,8 @@ h1, h2, h3 {
     border-bottom-width: 1px;
     font-size: 1.45em;
 }
-
+/* h1.page-title-text is added since solo 1.04*/
+h1.page-title-text,
 h1.page-title {
   line-height: 1.1rem;
   background-color: var(--m-pagetitle);
